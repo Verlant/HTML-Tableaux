@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planning</title>
+    <style>
+        table {
+            text-align: center;
+            border: 1px solid black;
+            width: 1500px;
+            border-collapse: collapse;
+        }
+
+        td {
+            border: 1px solid black;
+        }
+
+        thead {
+            height: 60px;
+            font-weight: bold;
+            color: #fffff1;
+            background-color: #ff0000;
+        }
+
+        tbody {
+            height: 220px;
+            border: 2px solid #0000ff;
+        }
+
+        tfoot {
+            height: 30px;
+            background-color: #5f9ea0;
+        }
+
+        .gray_row {
+            background-color: #9a9a9a;
+        }
+
+        .yellow_col {
+            background-color: #ffff00;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <td rowspan="2">Equipes</td>
+                <td colspan="6">Janvier</td>
+                <td rowspan="2" colspan="2"></td>
+            </tr>
+            <tr>
+                <td>Lundi</td>
+                <td>Mardi</td>
+                <td colspan="2">Mercredi</td>
+                <td>Jeudi</td>
+                <td>Vendredi</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="gray_row">
+                <td>Equipe 1</td>
+                <td colspan="4">Tache 1</td>
+                <td colspan="2">Tache 2</td>
+                <td rowspan="2" class="yellow_col">Semaine 1</td>
+            </tr>
+            <tr>
+                <td>Equipe 2</td>
+                <td colspan="3">Tache 1</td>
+                <td colspan="3">Tache 2</td>
+            </tr>
+            <tr class="gray_row">
+                <td>Equipe 1</td>
+                <td>Tache 3</td>
+                <td colspan="4">Tache 4</td>
+                <td>Tache 5</td>
+                <td rowspan="2" class="yellow_col">Semaine 2</td>
+            </tr>
+            <tr>
+                <td>Equipe 2</td>
+                <td colspan="2">Tache 3</td>
+                <td colspan="4">Tache 4</td>
+            </tr>
+            <tr class="gray_row">
+                <td>Equipe 1</td>
+                <td colspan="3">Tache 5</td>
+                <td colspan="3">Tache 6</td>
+                <td rowspan="2" class="yellow_col">Semaine 3</td>
+            </tr>
+            <tr>
+                <td>Equipe 2</td>
+                <td>Tache 5</td>
+                <td colspan="5">Tache 6</td>
+            </tr>
+            <tr class="gray_row">
+                <td>Equipe 1</td>
+                <td colspan="4">Tache 7</td>
+                <td colspan="2">Tache 8</td>
+                <td rowspan="2" class="yellow_col">Semaine 4</td>
+            </tr>
+            <tr>
+                <td>Equipe 2</td>
+                <td colspan="3">Tache 7</td>
+                <td colspan="3">Tache 8</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>
